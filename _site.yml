@@ -1,0 +1,21 @@
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "PM566 Final Project"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Interactive"
+      href: interactive_figs.html
+    - text: "PM566 Home"
+      href: https://elastic-khorana-70231e.netlify.app/
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/USCbiostats/PM566
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: 'styles.css'

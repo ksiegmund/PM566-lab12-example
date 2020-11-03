@@ -1,0 +1,53 @@
+---
+title: "PM566 Final Project"
+author: "Your Name"
+output: 
+    html_document:
+        toc: TRUE
+        toc_float: TRUE
+---
+
+<br>
+
+This is my PM566 Final Project website.
+
+<br>
+
+## Website essentials 
+
+The minimum requirements for an R Markdown website are:
+
+- `index.Rmd`: contains the content for the website homepage
+- `_site.yml`: contains metadata for the website
+
+<br>
+
+### Add `_site.yml`
+
+A basic example of a `_site.yml` file for a website with two pages:
+
+```{r eval = FALSE}
+name: "my-website"
+navbar:
+  title: "My Website"
+  left:
+    - text: "Home"
+      href: index.html
+```
+
+<br>
+
+### Add `index.Rmd`
+
+And a basic `index.Rmd` to create the Home page:
+
+```{r eval = FALSE}
+---
+title: "My Website"
+---
+ 
+Hello, Website! Welcome to the world.
+```
+
+<br>
+<br>
