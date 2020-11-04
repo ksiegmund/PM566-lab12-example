@@ -5,17 +5,16 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Interactive"
-      href: interactive_figs.html
-    - text: "PM566 Home"
-      href: https://elastic-khorana-70231e.netlify.app/
+    - text: "Lab 12"
+      href: 12-lab.html
   right:
     - icon: fa-github fa-lg
       href: https://github.com/USCbiostats/PM566
+    - text: "PM566 Home"
+      href: https://elastic-khorana-70231e.netlify.app/
 output:
   html_document:
     theme: cosmo
-    highlight: textmate
     include:
       after_body: footer.html
-    css: 'styles.css'
+    css: styles.css
