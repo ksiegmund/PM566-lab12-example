@@ -171,6 +171,9 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+output:
+  html_document:
+    theme: cosmo
 ```
 
 This is the minimum you need to include in your `_site.yml`.
@@ -331,6 +334,44 @@ source("process_COVID_data.R")
 ```
 
 Recall that `echo=FALSE` means the code itself will not appear in the HTML output. You can also set this globally in `opts_chunk$set(echo=FALSE)` (see above for this lab)
+
+**Note**: Make sure that you include the following libraries and formatting code at the beginning of your `index.Rmd` file
+
+````markdown
+
+`r ''````{r setup, message=FALSE, echo=FALSE, warning=FALSE}
+library(data.table)
+library(tidyverse)
+library(dplyr)
+library(plotly)
+library(DT)
+library(knitr)
+
+# Initialize code chunk options
+opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  eval=TRUE,
+  echo = TRUE,
+  cache = FALSE,
+  fig.width = 7, 
+  fig.align = 'center',
+  fig.asp = 0.618,
+  out.width = "700px",
+  class.source = "code-r")
+```
+
+`r ''````{css, echo=FALSE}
+.code-r { /* Code block */
+  font-size: 15px;
+}
+
+.code-r-small { /* Code block */
+  font-size: 10px;
+}
+```
+
+````
 
 <br>
 
