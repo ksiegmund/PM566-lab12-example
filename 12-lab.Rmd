@@ -44,12 +44,16 @@ opts_chunk$set(
 
 <br>
 
+Edits by K Siegmund
+
+<br>
+
 # Objectives
 
 The objective of today's lab is to create a project website using the **rmarkdown** package and deploy it using GitHub pages.
 We will include interactive visualizations on the website.
 
-For this lab, we have created some initial content for you to work with as an example. The code is found at: https://github.com/AbigailHorn/PM566-final-project.
+For this lab, we have created some initial content for you to work with as an example. The code is found at: https://github.com/ksiegmund/PM566-lab12-example.
 
 Your objective will be to create your own *project* website using this content as a reference.
 
@@ -93,19 +97,19 @@ This creates the output: `index.html`
 
 ## Step 0: Look at existing content
 
-Clone the website repository at https://github.com/AbigailHorn/PM566-final-project with example project website content into a directory for the lab, e.g. `"week12-lab"`. 
+Clone the website repository at https://github.com/ksiegmund/PM566-lab12-example with example project website content into a NEW directory for the lab, e.g. `"week12-lab"`. 
 
 **Note**: we are not initializing this as a git repository, we will do that in Step 1. We are just downloading the contents.
 
 ```shell
 mkdir ~/week12-lab
-git clone https://github.com/AbigailHorn/PM566-final-project
+git clone https://github.com/ksiegmund/PM566-lab12-example
 ```
 
-Then open the file `PM-566-final-project.Rproj`. For MacOS you can do that through command line using
+Then open the file `PM566-lab12-example.Rproj`. For MacOS you can do that through command line using
 
 ```shell
-open PM-566-final-project.Rproj
+open PM566-lab12-example.Rproj
 ```
 
 Otherwise, you can manually open the file from your directory.
@@ -114,20 +118,20 @@ Once you have it opened:
 
 - Check out the contents of this repository. What files does it contain?
 
-- Take a few moments to compare the contents of this repository to the final website at https://abigailhorn.github.io/PM566-final-project
+- Take a few moments to compare the contents of this repository to the final website at https://ksiegmund.github.io/PM566-lab12-example
 
 
 <br>
 
 ## Step 1: Create project website directory
 
-Create and go to the directory you want to create your website in, e.g. `"PM-566-my-final-project"`, and initialize git. 
+Create and go to the directory you want to create your website in, e.g. `"PM566-final-project"`, and initialize git. 
 
 In command line:
 
 ```shell
-mkdir ~/PM-566-my-final-project
-cd ~/PM-566-my-final-project
+mkdir ~/PM566-final-project
+cd ~/PM566-final-project
 git init
 ```
 
@@ -206,7 +210,7 @@ navbar:
     - icon: fa-github fa-lg
       href: https://github.com/USCbiostats/PM566
     - text: "PM566 Home"
-      href: https://elastic-khorana-70231e.netlify.app/
+      href: https://uscbiostats.github.io/PM566/
 output:
   html_document:
     theme: cosmo
@@ -215,13 +219,13 @@ output:
     css: styles.css
 ```
 
-Inspecting this, and the output on the completed website at https://abigailhorn.github.io/PM566-final-project, how do you add links to internal webpages? How do you add links to external websites? How do you add icons?
+Inspecting this, and the output on the completed website at https://ksiegmund.github.io/PM566-lab12-example, how do you add links to internal webpages? How do you add links to external websites? How do you add icons?
 
 **Note**: recall that the `output_dir` field indicates which directory to copy site content into (`"_site"` is the default if none is specified). It can be `"."` to keep all content within the root website directory alongside the source code.
 
 **Note**: Preview themes [here](https://www.datadreaming.org/post/r-markdown-theme-gallery/#:~:text=There%20are%2012%20additional%20themes,your%20theme%20from%20the%20default%20.) and play around with different options. Themes are easy to change even after you have added content. 
 
-Now your task is to create a YAML for your website that includes only the essential components for your website. Either copy the content of the simple `_site.yml` into your own `_site.yml` file in your website directory `PM-566-my-final-project`, or replicate it yourself line by line.
+Now your task is to create a YAML for your website that includes only the essential components for your website. Either copy the content of the simple `_site.yml` into your own `_site.yml` file in your website directory `PM566-final-project`, or replicate it yourself line by line.
 
 **Note**: YAML language is very picky so make sure your content is formatted appropriately. If you are not sure, either look up the appropriate text in the [reference guide](https://bookdown.org/yihui/rmarkdown/), search google, or copy from a website you know works!
 
@@ -289,7 +293,7 @@ You will see that your R Markdown website comes with a style class, specified by
 Don't be afraid of commitment! Add your changes as you go along.
 
 ```shell
-cd ~/PM-566-my-final-project
+cd ~/PM566-final-project
 git add --all
 git commit -m "Rendered website"
 ```
@@ -472,7 +476,7 @@ p1_scatter
 p2_scatter
 ```
 
-{-}
+## {-}
 
 ````
 
@@ -510,7 +514,7 @@ You've now made some edits to your website. To get the updates onto the live web
 
 - Preview contents by looking at the `index.html` file in a browser
 
-- Add and push changes to remote from your website project repository locally (e.g. `PM-566-my-final-project`):
+- Add and push changes to remote from your website project repository locally (e.g. `PM566-final-project`):
 
 ```shell
 git add --all
@@ -529,10 +533,10 @@ Preview your changes online at your website!
 Add the online link to your website in your `README.md` file, e.g.
 
 ```markdown
-This is my PM566 Final Project website home. The website is online at https://github.com/AbigailHorn/PM566-final-project .
+This is my PM566 lab12 website home. The website is online at https://ksiegmund.github.io/PM566-lab12-example/12-lab.html.
 ```
 
-Then please submit your lab by adding a link to this week's lab issue: https://github.com/USCbiostats/PM566/issues/49 in your final commit.
+Then please submit your lab by adding a link to this week's lab issue: https://github.com/USCbiostats/PM566/issues/65 in your final commit.
 
 <br>
 
